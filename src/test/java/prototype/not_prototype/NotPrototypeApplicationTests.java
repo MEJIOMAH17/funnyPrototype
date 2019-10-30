@@ -42,7 +42,8 @@ public class NotPrototypeApplicationTests {
         assert (target1 != target2);
 
         ShouldBePrototype shouldBeEqualTarget1 = AopTestUtils.getUltimateTargetObject(proxy1);
-        assert (shouldBeEqualTarget1 == proxy1);
+
+        assert (shouldBeEqualTarget1 == target1);
 
     }
 
